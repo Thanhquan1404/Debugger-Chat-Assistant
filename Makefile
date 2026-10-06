@@ -39,3 +39,6 @@ test-pipeline:
 
 serve:
 	uvicorn ai_debugger.main:app --host 0.0.0.0 --port 8000 --workers 1
+
+test-learning:
+	python scripts/test_learning.py $(ARGS)
